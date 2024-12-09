@@ -50,6 +50,9 @@ if(NOT xrceagent_FOUND)
                 -DUAGENT_P2P_PROFILE:BOOL=OFF
                 -DUAGENT_BUILD_EXECUTABLE:BOOL=OFF
                 -DUAGENT_ISOLATED_INSTALL:BOOL=OFF
+            CMAKE_ARGS
+                -DCMAKE_SUPPRESS_DEVELOPER_WARNINGS=ON
+                -Wno-dev
             )
 endif()
 
